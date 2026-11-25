@@ -15,7 +15,6 @@
       <nav>
         <a class="active" href="index.html">Home</a>
         <a href="privacy.html">Privacy Policy</a>
-        <a href="privacy-pl.html">Polityka prywatności</a>
       </nav>
     </div>
   </header>
@@ -46,7 +45,7 @@
 
     <div class="card">
       <h2 style="margin-top:0">Contact</h2>
-      <p style="margin-bottom:0">Questions, feedback or privacy requests: <a href="mailto:miron.strzalkowski@gmail.com">miron.strzalkowski@gmail.com</a></p>
+      <p style="margin-bottom:0">Questions, feedback or privacy requests: <a class="mail" data-u="miron.strzalkowski" data-d="gmail.com" href="#">miron.strzalkowski [at] gmail.com</a></p>
     </div>
   </main>
 
@@ -55,8 +54,14 @@
       <span>&copy; 2026 PawMade Games</span>
       <span class="spacer"></span>
       <a href="privacy.html">Privacy Policy</a>
-      <a href="privacy-pl.html">Polityka prywatności</a>
     </div>
   </footer>
+  <script>
+    document.querySelectorAll('a.mail').forEach(function (a) {
+      var addr = a.dataset.u + '@' + a.dataset.d;
+      a.href = 'mailto:' + addr;
+      a.textContent = addr;
+    });
+  </script>
 </body>
 </html>

@@ -14,19 +14,20 @@
       <a class="brand" href="index.html"><img src="assets/favicon.png" alt=""><b>Paw<span>Made</span> Games</b></a>
       <nav>
         <a href="index.html">Home</a>
-        <a href="privacy-pl.html">Polski</a>
+        <a class="active" href="privacy.html">Privacy Policy</a>
       </nav>
     </div>
   </header>
 
   <main>
     <div class="doc">
+    <div class="langswitch" role="group" aria-label="Language"><span class="on">English</span><a href="privacy-pl.html" hreflang="pl" lang="pl">Polski</a></div>
     <h1>Privacy Policy</h1>
     <p class="lead">Purrfect Miners (the "Game")</p>
     <p class="meta">Last updated: 24 November 2026</p>
 
     <h2>1. Who we are</h2>
-    <p>The Game is published by PawMade Games ("we", "us"), a brand operated by Miron Strzałkowski, a sole proprietor, ul. Bukowa 79, 41-600 Świętochłowice, Poland. You can contact us at <a href="mailto:miron.strzalkowski@gmail.com">miron.strzalkowski@gmail.com</a>.</p>
+    <p>The Game is published by PawMade Games ("we", "us"), a brand operated by Miron Strzałkowski, a sole proprietor, ul. Bukowa 79, 41-600 Świętochłowice, Poland. You can contact us at <a class="mail" data-u="miron.strzalkowski" data-d="gmail.com" href="#">miron.strzalkowski [at] gmail.com</a>.</p>
 
     <h2>2. What data we process</h2>
     <p>The Game stores your progress on your device. In addition, the services below process some data when you play.</p>
@@ -69,7 +70,7 @@
     <p>We may update this policy. The date at the top shows the latest version. We will show a notice in the Game if the changes are significant.</p>
 
     <h2>10. Contact</h2>
-    <p><a href="mailto:miron.strzalkowski@gmail.com">miron.strzalkowski@gmail.com</a></p>
+    <p><a class="mail" data-u="miron.strzalkowski" data-d="gmail.com" href="#">miron.strzalkowski [at] gmail.com</a></p>
     </div>
   </main>
 
@@ -78,8 +79,14 @@
       <span>&copy; 2026 PawMade Games</span>
       <span class="spacer"></span>
       <a href="index.html">Home</a>
-      <a href="privacy-pl.html">Polityka prywatności (PL)</a>
     </div>
   </footer>
+  <script>
+    document.querySelectorAll('a.mail').forEach(function (a) {
+      var addr = a.dataset.u + '@' + a.dataset.d;
+      a.href = 'mailto:' + addr;
+      a.textContent = addr;
+    });
+  </script>
 </body>
 </html>

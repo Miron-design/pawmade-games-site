@@ -14,19 +14,20 @@
       <a class="brand" href="index.html"><img src="assets/favicon.png" alt=""><b>Paw<span>Made</span> Games</b></a>
       <nav>
         <a href="index.html">Strona główna</a>
-        <a href="privacy.html">English</a>
+        <a class="active" href="privacy-pl.html">Polityka prywatności</a>
       </nav>
     </div>
   </header>
 
   <main>
     <div class="doc">
+    <div class="langswitch" role="group" aria-label="Język"><a href="privacy.html" hreflang="en" lang="en">English</a><span class="on">Polski</span></div>
     <h1>Polityka prywatności</h1>
     <p class="lead">Purrfect Miners („Gra")</p>
     <p class="meta">Ostatnia aktualizacja: 24 listopada 2026</p>
 
     <h2>1. Kim jesteśmy</h2>
-    <p>Wydawcą Gry jest PawMade Games („my"), marka prowadzona przez Miron Strzałkowski, jednoosobową działalność gospodarczą, ul. Bukowa 79, 41-600 Świętochłowice, Polska. Kontakt: <a href="mailto:miron.strzalkowski@gmail.com">miron.strzalkowski@gmail.com</a>.</p>
+    <p>Wydawcą Gry jest PawMade Games („my"), marka prowadzona przez Miron Strzałkowski, jednoosobową działalność gospodarczą, ul. Bukowa 79, 41-600 Świętochłowice, Polska. Kontakt: <a class="mail" data-u="miron.strzalkowski" data-d="gmail.com" href="#">miron.strzalkowski [at] gmail.com</a>.</p>
 
     <h2>2. Jakie dane przetwarzamy</h2>
     <p>Postęp w Grze zapisuje się na Twoim urządzeniu. Dodatkowo podczas gry niektóre dane przetwarzają usługi opisane poniżej.</p>
@@ -69,7 +70,7 @@
     <p>Możemy zaktualizować tę politykę. Data na górze wskazuje najnowszą wersję. Przy istotnych zmianach pokażemy komunikat w Grze.</p>
 
     <h2>10. Kontakt</h2>
-    <p><a href="mailto:miron.strzalkowski@gmail.com">miron.strzalkowski@gmail.com</a></p>
+    <p><a class="mail" data-u="miron.strzalkowski" data-d="gmail.com" href="#">miron.strzalkowski [at] gmail.com</a></p>
     </div>
   </main>
 
@@ -78,8 +79,14 @@
       <span>&copy; 2026 PawMade Games</span>
       <span class="spacer"></span>
       <a href="index.html">Strona główna</a>
-      <a href="privacy.html">Privacy Policy (EN)</a>
     </div>
   </footer>
+  <script>
+    document.querySelectorAll('a.mail').forEach(function (a) {
+      var addr = a.dataset.u + '@' + a.dataset.d;
+      a.href = 'mailto:' + addr;
+      a.textContent = addr;
+    });
+  </script>
 </body>
 </html>
