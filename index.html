@@ -5,38 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PawMade Games</title>
   <meta name="description" content="PawMade Games makes cozy mobile puzzle games. Home of Purrfect Miners.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <header>
     <div class="bar">
-      <a class="brand" href="index.html">PawMade Games</a>
+      <a class="brand" href="index.html"><img src="assets/favicon.png" alt=""><b>Paw<span>Made</span> Games</b></a>
       <nav>
-        <a href="index.html">Home</a>
+        <a class="active" href="index.html">Home</a>
         <a href="privacy.html">Privacy Policy</a>
-        <a href="privacy-pl.html">Polityka prywatności (PL)</a>
+        <a href="privacy-pl.html">Polityka prywatności</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <h1>PawMade Games</h1>
-    <p class="lead">Cozy mobile puzzle games with a lot of paws.</p>
+    <section class="hero">
+      <div>
+        <h1>Cozy puzzles with <span>a lot of paws.</span></h1>
+        <p class="lead">PawMade Games makes mobile puzzle games for relaxed evenings and quick breaks. Our first game, <strong>Purrfect Miners</strong>, sends a crew of brave cats deep underground.</p>
+        <div class="badges">
+          <span class="badge">🍎 iOS: coming soon</span>
+          <span class="badge">🤖 Android: coming soon</span>
+        </div>
+      </div>
+      <div class="art">
+        <img src="assets/cat.png" alt="A happy miner cat with a headlamp helmet and a red scarf" width="320">
+      </div>
+    </section>
 
-    <div class="card">
-      <h2 style="margin-top:0">Purrfect Miners</h2>
-      <p>Guide your cats deep underground: dig through the dirt, collect crystals and coins, and use boosters to clear every level.</p>
-      <p class="meta">Coming soon to iOS and Android.</p>
+    <h2>Purrfect Miners</h2>
+    <p>Guide your cats deep underground: dig through the dirt, collect crystals and coins, and use boosters to clear every level.</p>
+
+    <div class="grid">
+      <div class="feature"><div class="ico">⛏️</div><h3>Dig and plan</h3><p>Every move counts. Clear the path, reach the goal and keep your cats safe.</p></div>
+      <div class="feature"><div class="ico">💎</div><h3>Collect treasure</h3><p>Crystals, coins and rare artifacts wait under every layer of the cave.</p></div>
+      <div class="feature"><div class="ico">🧨</div><h3>Boost your run</h3><p>Dynamite, drills and more help you out of tight spots.</p></div>
     </div>
 
-    <h2>Contact</h2>
-    <p>Questions, feedback or privacy requests: <a href="mailto:miron.strzalkowski@gmail.com">miron.strzalkowski@gmail.com</a></p>
+    <div class="card">
+      <h2 style="margin-top:0">Contact</h2>
+      <p style="margin-bottom:0">Questions, feedback or privacy requests: <a href="mailto:miron.strzalkowski@gmail.com">miron.strzalkowski@gmail.com</a></p>
+    </div>
   </main>
 
   <footer>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="privacy-pl.html">Polityka prywatności</a>
-    <span>&copy; 2026 PawMade Games</span>
+    <div class="inner">
+      <span>&copy; 2026 PawMade Games</span>
+      <span class="spacer"></span>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="privacy-pl.html">Polityka prywatności</a>
+    </div>
   </footer>
 </body>
 </html>
