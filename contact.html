@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | PawMade Games</title>
+  <meta name="description" content="Contact PawMade Games: questions, feedback and privacy requests.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <a class="brand" href="index.html"><img src="assets/favicon.png" alt=""><b>Paw<span>Made</span> Games</b></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="doc">
+      <h1>Contact <span class="meta">/ Kontakt</span></h1>
+      <p class="lead">Questions, feedback or privacy requests? Write to us. / Pytania, uwagi albo sprawy związane z prywatnością? Napisz do nas.</p>
+      <p><a class="mail" data-u="miron.strzalkowski" data-d="gmail.com" href="#">miron.strzalkowski [at] gmail.com</a></p>
+      <p class="meta">We usually reply within a few days. / Zwykle odpisujemy w ciągu kilku dni.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="inner">
+      <span>&copy; 2026 PawMade Games</span>
+      <span class="spacer"></span>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll('a.mail').forEach(function (a) {
+      var addr = a.dataset.u + '@' + a.dataset.d;
+      a.href = 'mailto:' + addr;
+      a.textContent = addr;
+    });
+  </script>
+</body>
+</html>
